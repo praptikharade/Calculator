@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calci.css">
+  <script src="calci.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen" id="screen">0</div>
+    <div class="row">
+      <input type="button" class="button" value="7" onclick="appendToScreen('7')">
+      <input type="button" class="button" value="8" onclick="appendToScreen('8')">
+      <input type="button" class="button" value="9" onclick="appendToScreen('9')">
+      <input type="button" class="button" value="/" onclick="appendToScreen('/')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="4" onclick="appendToScreen('4')">
+      <input type="button" class="button" value="5" onclick="appendToScreen('5')">
+      <input type="button" class="button" value="6" onclick="appendToScreen('6')">
+      <input type="button" class="button" value="*" onclick="appendToScreen('*')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="1" onclick="appendToScreen('1')">
+      <input type="button" class="button" value="2" onclick="appendToScreen('2')">
+      <input type="button" class="button" value="3" onclick="appendToScreen('3')">
+      <input type="button" class="button" value="-" onclick="appendToScreen('-')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="0" onclick="appendToScreen('0')">
+      <input type="button" class="button" value="." onclick="appendToScreen('.')">
+      <input type="button" class="button" value="=" onclick="calculate()">
+      <input type="button" class="button" value="+" onclick="appendToScreen('+')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="C" onclick="clearScreen()">
+    </div>
+  </div>
+</body>
+</html>
